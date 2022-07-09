@@ -1,13 +1,96 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1036px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+nav div h1 {
+  font-size: 3rem;
+}
+
+input {
+  border: none;
+}
+
+.home {
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.login_container {
+  border: 2px solid gray;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+form .form_element {
+  margin: 1rem 0rem;
+}
+
+form .form_element h3 {
+  margin-bottom: 0.5rem;
+}
+
+form .form_element input {
+  font-size: 1.1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+}
+
+form .form_element button {
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+.error {
+  border-color: red !important;
+}
+
+.error_message {
+  margin: 0.5rem 0rem;
+  font-size: 0.7rem;
+  color: red !important;
+}
+
+.signup_link {
+  text-align: center;
+}
+
+.signup_link p a {
+  text-decoration: none;
+  color: gray;
+}
+
+.signup_link p a:hover {
+  text-decoration: underline;
+  color: black;
 }
